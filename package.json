@@ -1,0 +1,52 @@
+{
+	"name": "hellosvelte",
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"test:e2e": "playwright test",
+		"test": "npm run test:e2e && npm run test:unit -- --run",
+		"test:unit": "vitest",
+		"lint": "eslint . && prettier --check .",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@oslojs/crypto": "^1.0.1",
+		"@oslojs/encoding": "^1.1.0",
+		"@playwright/test": "^1.45.3",
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^4.0.0",
+		"@tailwindcss/container-queries": "^0.1.1",
+		"@tailwindcss/typography": "^0.5.15",
+		"@types/eslint": "^9.6.0",
+		"@types/node": "^22.7.8",
+		"autoprefixer": "^10.4.20",
+		"drizzle-kit": "^0.26.2",
+		"eslint": "^9.7.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.36.0",
+		"globals": "^15.0.0",
+		"prettier": "^3.3.2",
+		"prettier-plugin-svelte": "^3.2.6",
+		"svelte": "^5.0.0",
+		"svelte-check": "^4.0.0",
+		"tailwindcss": "^3.4.9",
+		"tsx": "^4.19.1",
+		"typescript": "^5.0.0",
+		"typescript-eslint": "^8.0.0",
+		"vite": "^5.0.3",
+		"vitest": "^2.0.4"
+	},
+	"packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a",
+	"dependencies": {
+		"@libsql/client": "^0.14.0",
+		"@node-rs/argon2": "^2.0.0",
+		"dotenv": "^16.4.5",
+		"drizzle-orm": "^0.35.3"
+	}
+}
