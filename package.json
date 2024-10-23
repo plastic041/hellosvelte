@@ -47,6 +47,7 @@
 		"@libsql/client": "^0.14.0",
 		"@node-rs/argon2": "^2.0.0",
 		"dotenv": "^16.4.5",
-		"drizzle-orm": "^0.35.3"
+		"drizzle-orm": "^0.35.3",
+		"tailwind-merge": "^2.5.4"
 	}
 }
